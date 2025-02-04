@@ -128,7 +128,7 @@
      
       // If no saved dots, generate random dots and save to localStorage
       if (!dots) {
-          dots = Array.from({ length: 100 }, () => ({
+          dots = Array.from({ length: 300 }, () => ({
               x: Math.random() * width,
               y: Math.random() * height,
           }));
@@ -137,7 +137,7 @@
 
       // Randomize voters function
       document.getElementById('randomizeVoters').addEventListener('click', () => {
-          dots = Array.from({ length: 100 }, () => ({
+          dots = Array.from({ length: 300 }, () => ({
               x: Math.random() * width,
               y: Math.random() * height,
           }));
